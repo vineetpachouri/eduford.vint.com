@@ -1,0 +1,98 @@
+/* Reset + Base Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background with Overlay */
+.arts-page {
+  background: url('https://akimbo.ca/wp-content/uploads/2019/11/nov8_ubc2.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  color: #f1f5f9;
+}
+
+/* Dark overlay for readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+/* Content Container */
+.arts-content {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(30, 30, 30, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+/* Headings */
+.arts-content h1 {
+  font-size: 2.5rem;
+  color: #f472b6; /* rose-pink accent */
+  margin-bottom: 15px;
+}
+
+.arts-content h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Intro */
+.intro {
+  font-size: 1.1rem;
+  color: #d1d5db;
+  margin-bottom: 30px;
+}
+
+/* Paragraphs & Lists */
+.section p, .section ul {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #e5e7eb;
+}
+
+.section ul {
+  padding-left: 20px;
+}
+
+.section ul li {
+  list-style: disc;
+  margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .arts-content {
+    padding: 25px;
+  }
+
+  .arts-content h1 {
+    font-size: 2rem;
+  }
+
+  .arts-content h2 {
+    font-size: 1.3rem;
+  }
+}

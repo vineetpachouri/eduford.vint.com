@@ -1,0 +1,74 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(https://img.freepik.com/free-vector/gradient-dark-dynamic-lines-background_23-2148995950.jpg?t=st=1745904219~exp=1745907819~hmac=71be5dd0062e131fcfd2212ba8c5575abbf28ff7eee8f72c8fd88a03f95d03e4&w=1380);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fefcfc;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .apply-container {
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  /* Header */
+  .apply-header h1 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 10px;
+  }
+  
+  .apply-header p {
+    font-size: 1.2rem;
+    color:#ffffff;
+    margin-bottom: 40px;
+  }
+  
+  /* CTA Button */
+  .cta-dark {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #00bcd4;
+    color: #121212;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.2);
+  }
+  
+  .cta-dark:hover,
+  .cta-dark:focus {
+    background-color: #009eb0;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
+    transform: translateY(-2px);
+  }
+  
+  .cta-dark:focus-visible {
+    outline: 2px dashed #00bcd4;
+    outline-offset: 4px;
+  }
+  
+  /* Footer */
+  .apply-footer {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  

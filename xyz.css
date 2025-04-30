@@ -1,0 +1,95 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .tour-wrapper {
+    background-image: url('newyork.png'); /* Replace with your preferred background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  /* Dark overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.75);
+    z-index: 0;
+  }
+  
+  /* Content Layer */
+  .content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Header */
+  header h1 {
+    font-size: 3.5rem;
+    margin-top: 40px;
+    color: #00bcd4;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin: 20px auto 60px;
+    color: #cccccc;
+    max-width: 700px;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+  
+  .cta-dark {
+    padding: 15px 40px;
+    background-color: #00bcd4;
+    color: #121212;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
+  }
+  
+  .cta-dark:hover {
+    background-color: #009eb0;
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+  }
+  

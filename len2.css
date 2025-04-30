@@ -1,0 +1,98 @@
+/* Reset + Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Main Container with Background */
+.ba-page {
+  background: url('https://www.shutterstock.com/image-photo/mba-master-business-administration-program-600nw-2434045027.jpg') no-repeat center center/cover;
+  color: #f1f1f1;
+  min-height: 100vh;
+  padding: 60px 20px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Dark overlay for readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+/* Content Box */
+.ba-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  background-color: rgba(25, 25, 25, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Headings */
+.ba-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #facc15; /* yellow */
+}
+
+.ba-content h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Intro Text */
+.intro {
+  font-size: 1.1rem;
+  color: #d1d5db;
+  margin-bottom: 30px;
+}
+
+/* Section Text */
+.section p, .section ul {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+/* List Styling */
+.section ul {
+  padding-left: 20px;
+}
+
+.section ul li {
+  margin-bottom: 8px;
+  list-style: disc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .ba-content {
+    padding: 25px;
+  }
+
+  .ba-content h1 {
+    font-size: 2rem;
+  }
+
+  .ba-content h2 {
+    font-size: 1.3rem;
+  }
+}

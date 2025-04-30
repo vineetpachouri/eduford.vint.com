@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply Now | Eduford University</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      position: relative;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      padding: 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-content a {
+      background: #ffcb05;
+      color: #000;
+      padding: 12px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .hero-content a:hover {
+      background: #e6b800;
+    }
+
+    .form-section {
+      padding: 60px 20px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 700px;
+      background: #ffffff;
+      padding: 40px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, select, textarea {
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #0077cc;
+      outline: none;
+    }
+
+    button {
+      background: #003366;
+      color: #fff;
+      padding: 15px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #001f4d;
+    }
+
+    @media (max-width: 600px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .form-container {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header>
+    <div class="hero-content">
+      <h1>Join Eduford University</h1>
+      <p>Your journey toward excellence begins here. Apply now and shape your future.</p>
+      <a href="#apply">Apply Now</a>
+    </div>
+  </header>
+
+  <!-- FORM SECTION -->
+  <section class="form-section" id="apply">
+    <div class="form-container">
+      <h2>Application Form</h2>
+      <form action="file:///C:/Users/LENOVO/OneDrive/Desktop/web%20pages/thank%20you.html" method="POST">
+        <input type="text" name="fullname" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="tel" name="phone" placeholder="Phone Number" />
+        <select name="program" required>
+          <option value="" disabled selected>Select Program</option>
+          <option value="business">Business Administration</option>
+          <option value="engineering">Engineering</option>
+          <option value="arts">Arts & Humanities</option>
+        </select>
+        <textarea name="message" rows="5" placeholder="Why do you want to join Eduford?" required></textarea>
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .programs-wrapper {
+    background-image: url('banner2.jpg'); /* Replace with your preferred background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 115vh;
+    position: relative;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  /* Dark overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.75);
+    z-index: 0;
+  }
+  
+  /* Content Layer */
+  .content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Header */
+  header h1 {
+    font-size: 3rem;
+    margin-top: 40px;
+    color: #00bcd4;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin: 20px auto 60px;
+    color: #cccccc;
+    max-width: 700px;
+  }
+  
+  /* Program Cards Section */
+  .programs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .program-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .program-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 188, 212, 0.2);
+  }
+  
+  .program-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .program-card h3 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+  }
+  
+  .program-card p {
+    color: #ddd;
+    font-size: 0.95rem;
+  }
+  
+  /* CTA Button */
+  .cta-dark {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00bcd4;
+    color: #121212;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
+  }
+  
+  .cta-dark:hover {
+    background-color: #009eb0;
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+  }
+  

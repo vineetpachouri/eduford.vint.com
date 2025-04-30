@@ -1,0 +1,103 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .campus-wrapper {
+    background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f'); /* Replace with your preferred image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  /* Overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.85);
+    z-index: 0;
+  }
+  
+  /* Content Layer */
+  .content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Header */
+  header h1 {
+    font-size: 3rem;
+    margin-top: 40px;
+    color: #00bcd4;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin: 20px auto 60px;
+    color: #cccccc;
+    max-width: 700px;
+  }
+  
+  /* Highlights Section */
+  .campus-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 188, 212, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #ddd;
+    font-size: 0.95rem;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+  }
+  

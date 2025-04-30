@@ -1,0 +1,107 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .admissions-wrapper {
+    background-image: url('background.jpg'); /* Replace with your own */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Dark overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.8);
+    z-index: 0;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+  }
+  
+  /* Header */
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #00bcd4;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-bottom: 40px;
+  }
+  
+  /* Info Section */
+  .admissions-info {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .admissions-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .admissions-info ul {
+    list-style: none;
+    margin-bottom: 30px;
+    color: #dddddd;
+  }
+  
+  .admissions-info li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+  }
+  
+  /* CTA Button */
+  .cta-dark {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00bcd4;
+    color: #121212;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
+  }
+  
+  .cta-dark:hover {
+    background-color: #009eb0;
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+  }
+  

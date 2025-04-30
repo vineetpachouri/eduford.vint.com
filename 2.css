@@ -1,0 +1,98 @@
+/* Reset + Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Page Container */
+.about-page {
+  background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+  min-height: 100vh;
+  padding: 60px 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #f8fafc;
+}
+
+/* Overlay for readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+/* Content Styling */
+.about-content {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(25, 25, 25, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+/* Headings */
+.about-content h1 {
+  font-size: 2.5rem;
+  color: #38bdf8; /* Sky blue accent */
+  margin-bottom: 15px;
+}
+
+.about-content h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Text Content */
+.intro {
+  font-size: 1.1rem;
+  color: #d1d5db;
+  margin-bottom: 30px;
+}
+
+.section p, .section ul {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #e2e8f0;
+}
+
+/* List Styling */
+.section ul {
+  padding-left: 20px;
+}
+
+.section ul li {
+  list-style: disc;
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .about-content {
+    padding: 25px;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.3rem;
+  }
+}
